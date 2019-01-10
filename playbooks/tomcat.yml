@@ -34,10 +34,5 @@
         src: /opt/apache-tomcat-8.5.37/conf/server.xml
         dest: /opt/
 
-    - name: To update the tomcat server.xml
-      copy:
-        src: /opt/playbooks/server.xml
-        dest: /opt/apache-tomcat-8.5.37/conf/
-
     - name: To start my apache tomcat
       command: nohup /opt/apache-tomcat-8.5.37/bin/startup.sh
